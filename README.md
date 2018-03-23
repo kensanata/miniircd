@@ -61,7 +61,7 @@ motd file or an SSL pem file, you'll need to put them in the jail as well:
 Remember to specify the paths for --state-dir, --log-dir, --motd and
 --ssl-pem-file from within the jail, e.g.:
 
-    # miniircd --state-dir=/ --log-dir=/ --motd=/motd.txt --setuid=nobody \
+    # miniircd --state-dir=/ --motd=/motd.txt --setuid=nobody \
           --ssl-pem-file=/miniircd.pem --chroot=/var/jail/miniircd
 
 Make sure your jail is writable by whatever user/group you are running the
